@@ -7,9 +7,8 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.red,
         appBar: AppBar(
-          title: Center(
-            child: Text('Dicee'),
-          ),
+          title: Text('Dicee'),
+          centerTitle: true,
           backgroundColor: Colors.red,
         ),
         body: DicePage(),
@@ -44,6 +43,8 @@ class _DicePageState extends State<DicePage> {
               onPressed: () {
                 changeDiceNumber();
               },
+              highlightColor: Colors.transparent,
+              splashColor: Colors.transparent,
               child: Image.asset('images/dice$leftDiceNumber.png'),
             ),
           ),
@@ -52,6 +53,8 @@ class _DicePageState extends State<DicePage> {
               onPressed: () {
                 changeDiceNumber();
               },
+              highlightColor: Colors.transparent,
+              splashColor: Colors.transparent,
               child: Image.asset('images/dice$rightDiceNumber.png'),
             ),
           ),
